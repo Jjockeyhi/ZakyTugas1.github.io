@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1>Hi Buddy!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/13_Maggio_1995_Paolo_Tassetto_con_Tom_Platz%2C_Mr._Universo_%28cropped%29.JPG/220px-13_Maggio_1995_Paolo_Tassetto_con_Tom_Platz%2C_Mr._Universo_%28cropped%29.JPG" />
+    <h1>Hari ini leg day, Maukan anda ikut?</h1>
+    <button id="btn_gas" onclick="alert('Barang siapa yang leg day maka ia mendapat keberkahan')">gas</button>&nbsp;
+    <button id="btn_skip" onclick="skip(this)" style="position: absolute">
+      skip
+    </button>
+  </body>
+  <script>
+    function skip(id) {
+      var gas = document.getElementById("btn_gas");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + gas.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
